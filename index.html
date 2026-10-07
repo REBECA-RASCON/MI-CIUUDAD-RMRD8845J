@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MI CIUDAD - CD. JUÁREZ</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Times New Roman', Times, serif;
+			background-color: #ffffff;
+			color: #000000;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden; 
+		}
+
+		header {
+			text-align: center;
+			padding: 15px 10px 10px 10px;
+			background-color: #ffffff;
+		}
+
+		header h1 {
+			font-size: 2.2rem;
+			color: #1a2a3a;
+			letter-spacing: 2px;
+		}
+
+		header h2 {
+			font-size: 1.2rem;
+			color: #333333;
+			font-weight: normal;
+			margin-top: 5px;
+		}
+
+		nav {
+			background-color: #1a2a3a;
+			width: 100%;
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		nav a {
+			color: #ffffff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1rem;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+			color: #d4af37;
+		}
+
+		main {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 10px 40px;
+			background-color: #f2f4f7; 
+		}
+
+		.title-welcome {
+			font-size: 1.6rem;
+			font-weight: bold;
+			margin-bottom: 25px;
+			text-align: center;
+		}
+		.content-grid {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			max-width: 1100px;
+			gap: 30px;
+		}
+
+		.col {
+			flex: 1;
+			font-size: 1.05rem;
+			line-height: 1.4;
+			text-align: justify;
+		}
+
+		.col-img {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.col-img img {
+			max-width: 180px;
+			max-height: 180px;
+			height: auto;
+			object-fit: contain;
+			border-radius: 8px;
+		}
+
+		footer {
+			background-color: #0b131c;
+			color: #ffffff;
+			text-align: center;
+			padding: 12px;
+			font-weight: bold;
+			font-size: 1.1rem;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>MI CIUDAD</h1>
+		<h2>CD. JUÁREZ</h2>
+	</header>
+
+	<nav>
+		<a href="#">LUGARES IMPORTANTES</a>
+		<a href="#">GASTRONOMÍA</a>
+		<a href="#">DANZAS</a>
+		<a href="#">HISTORIA</a>
+	</nav>
+
+	<main>
+		<div class="title-welcome">¡BIENVENIDO!</div>
+
+		<div class="content-grid">
+			<div class="col">
+				<p>
+					Crecer en Ciudad Juárez dejó recuerdos imborrables en mi memoria: las tardes calurosas en el parque, los atardeceres rojizos y la calidez de su gente. Recuerdo los paseos familiares por la zona centro y la emoción de compartir momentos sencillos que convirtieron a esta ciudad fronteriza en un lugar de afecto y nostalgias.
+				</p>
+			</div>
+
+			<div class="col">
+				<p>
+					Ciudad Juárez, situada en el estado de Chihuahua, es una de las comunidades fronterizas más dinámicas e importantes de México. Con su vibrante cultura urbana, su relevancia industrial y su rica historia vinculada al desierto y a la frontera, Juárez representa el espíritu resiliente y trabajador de su gente.
+				</p>
+			</div>
+      
+			<div class="col-img">
+				<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Monumento representativo">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>MI CIUDAD - CD. JUÁREZ</p>
+	</footer>
+
+</body>
+</html>
