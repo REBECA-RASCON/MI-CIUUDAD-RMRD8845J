@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CONTACTO Y CUESTIONARIO</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Times New Roman', Times, serif;
+			background-color: #ffffff;
+			color: #000000;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		header {
+			text-align: center;
+			padding: 20px 10px 10px 10px;
+		}
+
+		header h1 {
+			font-size: 2.2rem;
+			color: #1a2a3a;
+		}
+
+		header h2 {
+			font-size: 1.2rem;
+			color: #333333;
+			font-weight: normal;
+		}
+
+		main {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			background-color: #f2f4f7;
+		}
+
+		.form-container {
+			background-color: #ffffff;
+			border: 1px solid #ccc;
+			padding: 20px 25px;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		.back-link-top {
+			display: inline-block;
+			margin-bottom: 15px;
+			color: #1a2a3a;
+			font-weight: bold;
+			text-decoration: none;
+			border: 1px solid #1a2a3a;
+			padding: 5px 12px;
+			background-color: #ffffff;
+		}
+
+		.back-link-top:hover {
+			background-color: #1a2a3a;
+			color: #ffffff;
+		}
+
+		.form-title {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: bold;
+			margin-bottom: 15px;
+			border-bottom: 2px solid #1a2a3a;
+			padding-bottom: 5px;
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		.form-group label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 6px 8px;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 1rem;
+			border: 1px solid #888;
+		}
+
+		.radio-group, .checkbox-group {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+
+		.radio-group label, .checkbox-group label {
+			font-weight: normal;
+			cursor: pointer;
+		}
+
+		.btn-submit {
+			background-color: #1a2a3a;
+			color: #ffffff;
+			border: none;
+			padding: 10px;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 1.05rem;
+			font-weight: bold;
+			cursor: pointer;
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.btn-submit:hover {
+			background-color: #2c4257;
+		}
+
+		footer {
+			background-color: #0b131c;
+			color: #ffffff;
+			text-align: center;
+			padding: 15px;
+			width: 100%;
+		}
+
+		.btn-footer-back {
+			display: inline-block;
+			margin-top: 8px;
+			background-color: #d4af37;
+			color: #000000;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 8px 16px;
+			border-radius: 3px;
+		}
+
+		.btn-footer-back:hover {
+			background-color: #ffffff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>MI CIUDAD</h1>
+		<h2>CD. JUÁREZ</h2>
+	</header>
+
+	<main>
+		<div class="form-container">
+      
+			<a href="index.html" class="back-link-top">&larr; Volver a Inicio</a>
+
+			<div class="form-title">CONTÁCTANOS Y CUESTIONARIO</div>
+
+			<form action="#" method="post">
+
+				<div class="form-group">
+					<label for="nombre">Nombre Completo:</label>
+					<input type="text" id="nombre" name="nombre" class="form-control" required>
+				</div>
+
+				<div class="form-group">
+					<label for="correo">Correo Electrónico:</label>
+					<input type="email" id="correo" name="correo" class="form-control" required>
+				</div>
+
+				<hr style="margin: 15px 0; border: 0; border-top: 1px solid #ccc;">
+
+				<div class="form-group">
+					<label>1. ¿Cómo es el clima de Juárez?</label>
+					<div class="radio-group">
+						<label><input type="radio" name="clima" value="arido"> Árido</label>
+						<label><input type="radio" name="clima" value="humedo"> Húmedo</label>
+						<label><input type="radio" name="clima" value="templado"> Templado</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="frontera">2. ¿Con cuál estado americano es frontera Cd. Juárez?</label>
+					<select id="frontera" name="frontera" class="form-control">
+						<option value="">-- Selecciona una opción --</option>
+						<option value="texas">Texas</option>
+						<option value="nevada">Nevada</option>
+						<option value="nuevo_mexico">Nuevo México</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="chamizal">3. ¿Qué fue otorgado a la ciudad en los 60s?</label>
+					<input type="text" id="chamizal" name="chamizal" class="form-control" placeholder="Escribe tu respuesta...">
+				</div>
+
+				<div class="form-group">
+					<label>4. ¿Cuáles de estos animales habitan en Cd. Juárez?</label>
+					<div class="checkbox-group">
+						<label><input type="checkbox" name="animales" value="buitre"> Buitre</label>
+						<label><input type="checkbox" name="animales" value="tigre"> Tigre</label>
+						<label><input type="checkbox" name="animales" value="pinguino"> Pingüino</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>5. ¿Por cuál comida es conocida Cd. Juárez?</label>
+					<div class="radio-group">
+						<label><input type="radio" name="comida" value="tortas"> Tortas colita de pavo</label>
+					</div>
+				</div>
+
+				<button type="submit" class="btn-submit">Enviar Formulario</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<p>MI CIUDAD - CD. JUÁREZ</p>
+		<div>
+			<a href="index.html" class="btn-footer-back">&larr; VOLVER A LA PÁGINA DE INICIO</a>
+		</div>
+	</footer>
+
+</body>
+</html>
