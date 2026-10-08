@@ -5,185 +5,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MI CIUDAD - CD. JUÁREZ</title>
 	<style>
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
 		body {
-			font-family: 'Times New Roman', Times, serif;
-			background-color: #ffffff;
-			color: #000000;
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			overflow: hidden;
-		}
-
-
-		header {
+			font-family: 'Times New Roman', serif;
+			margin: 0;
 			text-align: center;
-			padding: 15px 10px 10px 10px;
-			background-color: #ffffff;
 		}
-
-		header h1 {
-			font-size: 2.2rem;
-			color: #1a2a3a;
-			letter-spacing: 2px;
+ 
+		header {
+			padding: 15px;
 		}
-
-		header h2 {
-			font-size: 1.2rem;
-			color: #333333;
-			font-weight: normal;
-			margin-top: 5px;
-		}
-
+ 
 		nav {
 			background-color: #1a2a3a;
-			width: 100%;
-			padding: 10px 0;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
+			padding: 10px;
 		}
-
+ 
 		nav a {
-			color: #ffffff;
-			text-decoration: none;
+			color: white;
+			margin: 0 15px;
 			font-weight: bold;
-			font-size: 1rem;
+			text-decoration: none;
 		}
-
+ 
 		nav a:hover {
 			text-decoration: underline;
-			color: #d4af37;
 		}
-
+ 
 		main {
-			flex-grow: 1;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			padding: 10px 40px;
-			background-color: #f2f4f7; 
-		}
-
-		.title-welcome {
-			font-size: 1.6rem;
-			font-weight: bold;
-			margin-bottom: 25px;
-			text-align: center;
-		}
-
-		.content-grid {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 100%;
-			max-width: 1100px;
-			gap: 30px;
-		}
-
-		.col {
-			flex: 1;
-			font-size: 1.05rem;
-			line-height: 1.4;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
 			text-align: justify;
 		}
-
-		.col-img {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+ 
+		main h2 {
+			text-align: center;
 		}
-
-		.col-img img {
-			max-width: 180px;
-			max-height: 180px;
-			height: auto;
-			object-fit: contain;
-			border-radius: 8px;
+ 
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 200px;
 		}
-
+ 
 		footer {
 			background-color: #0b131c;
-			color: #ffffff;
-			text-align: center;
-			padding: 12px;
-			font-weight: bold;
-			font-size: 1.1rem;
-			width: 100%;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
+			color: white;
+			padding: 15px;
 		}
-
-		footer p {
-			margin: 0;
-		}
-
+ 
 		footer a {
-			color: #ffffff;
-			text-decoration: underline;
-			font-size: 1rem;
-			font-weight: normal;
-		}
-
-		footer a:hover {
-			color: #d4af37;
+			color: white;
 		}
 	</style>
 </head>
 <body>
-
+ 
 	<header>
 		<h1>MI CIUDAD</h1>
-		<h2>CD. JUÁREZ</h2>
+		<h3>CD. JUÁREZ</h3>
 	</header>
-
+ 
 	<nav>
 		<a href="luimportantes.html">LUGARES IMPORTANTES</a>
 		<a href="gastronomia.html">GASTRONOMÍA</a>
 		<a href="danza.html">DANZAS</a>
 		<a href="historia.html">HISTORIA</a>
 	</nav>
-
+ 
 	<main>
-		<div class="title-welcome">¡BIENVENIDO!</div>
-
-		<div class="content-grid">
-			<div class="col">
-				<p>
-					Cd juarez, la ciudad donde creci, me ha traido tantos recuerdos unicos, como salir a pasear en el clima arido, visitar los nopales en las afueras de la ciudad y observar a las maravillosas aves en el  cielo, continuando su trayectoria migratoria. Todo esto y mas aun me ha dado un amor unico hacia esa ciudad y me encatara compartirlo.
-				</p>
-			</div>
-
-			<div class="col">
-				<p>
-					Ciudad Juárez, situada en el estado de Chihuahua, es una de las comunidades fronterizas más dinámicas e importantes de México. Con su vibrante cultura urbana, su relevancia industrial y su rica historia vinculada al desierto y a la frontera, Juárez representa el espíritu resiliente y trabajador de su gente.
-				</p>
-			</div>
-
-			<div class="col-img">
-				<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Monumento representativo">
-			</div>
-		</div>
+		<h2>¡BIENVENIDO!</h2>
+ 
+		<p>
+			Cd juarez, la ciudad donde creci, me ha traido tantos recuerdos unicos, como salir a pasear en el clima arido, visitar los nopales en las afueras de la ciudad y observar a las maravillosas aves en el  cielo, continuando su trayectoria migratoria. Todo esto y mas aun me ha dado un amor unico hacia esa ciudad y me encatara compartirlo.
+		</p>
+ 
+		<p>
+			Ciudad Juárez, situada en el estado de Chihuahua, es una de las comunidades fronterizas más dinámicas e importantes de México. Con su vibrante cultura urbana, su relevancia industrial y su rica historia vinculada al desierto y a la frontera, Juárez representa el espíritu resiliente y trabajador de su gente.
+		</p>
+ 
+		<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Monumento representativo">
 	</main>
-
+ 
 	<footer>
 		<p>NOMBRE NO CAMBIAR</p>
-		<div>
-			<span>Contáctanos: </span>
-			<a href="formulario.html">Formulario de contacto</a>
-		</div>
+		<p>Contáctanos: <a href="formulario.html">Formulario de contacto</a></p>
 	</footer>
-
+ 
 </body>
 </html>
+ 
